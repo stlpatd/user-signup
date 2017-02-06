@@ -15,7 +15,7 @@ def build_page(username, password, ver_pass, email, error_username, error_passwo
     ver_pw_input= "<input type='password' name='ver_pass' value=''>".format(ver_pass)
     error_ver_pass= "<p style='color:red' name='error_ver_pass' >{0}</p>".format(error_ver_pass)
     email_label= "<label style='margin:2% 4%; font-#weight: bold; font-size: 14px; '>Email (optional)</label>"
-    email_input= "<input type='text' name='email' value=''>".format(email)
+    email_input= "<input type='text' name='email' value='{0}'>".format(email)
     error_email= "<p style='color:red' name='error_email' >{0}</p>".format(error_email)
     submit= "<input type='submit'/>"
     form= "<form method='post'>" + user_label + user_input + error_username + "<br>" + pw_label + pw_input + error_password + "<br>" +ver_pw_label + ver_pw_input + error_ver_pass + "<br>" + email_label + email_input + error_email + "<br>" + submit + "</form>"
